@@ -2,11 +2,10 @@ package br.com.gomes.usuario.controller;
 
 import java.io.Serializable;
 
-import javax.enterprise.context.SessionScoped;
+import javax.annotation.ManagedBean;
+import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
-import javax.inject.Named;
-
 import org.apache.commons.lang3.StringUtils;
 
 import br.com.gomes.model.UsuarioModel;
@@ -14,7 +13,7 @@ import br.com.gomes.repository.UsuarioRepository;
 import br.com.gomes.repository.entity.UsuarioEntity;
 import br.com.gomes.uteis.Uteis;
 
-@Named(value = "usuarioController")
+@ManagedBean
 @SessionScoped
 public class UsuarioController implements Serializable {
 

@@ -1,6 +1,7 @@
 package br.com.gomes.filters;
 
 import java.io.IOException;
+
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -12,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import br.com.gomes	.model.UsuarioModel;
+import br.com.gomes.model.UsuarioModel;
 
 @WebFilter("/sistema/*")
 public class AutenticacaoFilter implements Filter {
